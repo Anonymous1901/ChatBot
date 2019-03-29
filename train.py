@@ -23,13 +23,14 @@ while True:
     response = bot.get_response(request)
 
     if response.confidence > 0.9:
-
+        
         print('Jarvis : ', response, '\n')
+ 
+    elif request == ("bye"):
 
-        #print('Do you want anything else?')
+        print('Hope to see you soon '+ name)
 
+        break
+        
     else:
         print('Jarvis: Sorry i have no idea about that.')
-
-    if request == ( "bye"):
-         break
