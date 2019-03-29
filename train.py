@@ -1,5 +1,7 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from requests import get
+from bs4 import BeautifulSoup
 import os
 
 bot= ChatBot('Jarvis')
@@ -22,7 +24,7 @@ while True:
 
     response = bot.get_response(request)
 
-    if response.confidence > 0.9:
+    if response.confidence > 0.7:
         
         print('Jarvis : ', response, '\n')
  
@@ -31,6 +33,16 @@ while True:
         print('Hope to see you soon '+ name)
 
         break
-        
+
     else:
-        print('Jarvis: Sorry i have no idea about that.')
+        
+        try:
+            url  = "https://en.wikipedia.org/wiki/"+ request
+            page = get(url).text
+            soup = BeautifulSoup(page,"lxml")
+            p    = soup.find_all("p")
+            print(p[1].text)
+
+        except IndexError as error:
+            
+            print('Jarvis: Sorry i have no idea about that.')
