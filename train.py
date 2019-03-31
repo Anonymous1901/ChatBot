@@ -24,7 +24,7 @@ while True:
 
     response = bot.get_response(request)
 
-    if response.confidence > 0.7:
+    if response.confidence > 0.1:
         
         print('Jarvis : ', response, '\n')
  
@@ -43,6 +43,6 @@ while True:
             p    = soup.find_all("p")
             print(p[1].text)
 
-        except IndexError as error:
+        except Exception as error:
             
             print('Jarvis: Sorry i have no idea about that.')
