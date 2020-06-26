@@ -1,4 +1,4 @@
-# A simple commandline ChatBot using ChatterBot
+# A simple Commandline ChatBot using ChatterBot
 
 ChatterBot is a Python library that makes it easy to generate automated responses to a user’s input. ChatterBot uses a selection of machine learning algorithms to produce different types of responses. This makes it easy for developers to create chat bots and automate conversations with users. The language independent design of ChatterBot allows it to be trained to speak any language. Additionally, the machine-learning nature of ChatterBot allows an agent instance to improve it’s own knowledge of possible responses as it interacts with humans and other sources of informative data.
 
@@ -42,7 +42,7 @@ python main.py
 
 ### Example Screenshot
 
-![screenshot](screenshot.png)
+![screenshot](/files/screenshot.png)
 
 ## Reference
 
