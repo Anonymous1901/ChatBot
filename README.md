@@ -42,7 +42,7 @@ python main.py
 
 ### Example Screenshot
 
-![screenshot](files/screenshot.png)
+![Screenshot](files/Screenshot.png)
 
 ## Reference
 
