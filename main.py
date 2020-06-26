@@ -11,9 +11,9 @@ bot= ChatBot('Jarvis')
 trainer = ListTrainer(bot)
 
 # Path for training data
-for file in os.listdir('C:/Users/Anonymous/Desktop/ChatBot/data/'):
+for file in os.listdir('C:/Users/Anonymous/Desktop/ChatBot/files/data/'):
 
-    chats = open('C:/Users/Anonymous/Desktop/ChatBot/data/' + file, 'r').readlines()
+    chats = open('C:/Users/Anonymous/Desktop/ChatBot/files/data/' + file, 'r').readlines()
 
     trainer.train(chats)
 
