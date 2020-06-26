@@ -23,7 +23,7 @@ First, the chatbot is trained with a set of training data present in `/files/dat
 
 ## Getting Started
 
-Make sure you have python installed on your local machine
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Make sure you have Python installed on your machine.
 
 ### Installation
 
